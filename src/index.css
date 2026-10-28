@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --vermilion: #FF300F;
+    --orange: #FF741F;
+    --peach: #FFB879;
+    --cream: #FFF0C7;
+    --teal: #007F86;
+    --turquoise: #70B9AF;
+    --ink: #171719;
+    --ivory: #FFF8E8;
+  }
+
+  body {
+    background-color: #FFF0C7;
+    color: #171719;
+    font-family: 'DM Sans', sans-serif;
+  }
+}
+
+/* Custom Typography Utility Classes */
+.font-display {
+  font-family: 'Bowlby One SC', sans-serif, system-ui;
+  letter-spacing: -0.01em;
+}
+
+.font-script {
+  font-family: 'Lobster', cursive;
+}
+
+.font-body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.font-mono-code {
+  font-family: 'Space Mono', monospace;
+}
+
+/* Retro Poster Text Shadows */
+.text-shadow-poster {
+  text-shadow: 3px 3px 0px #171719, 6px 6px 0px #FF741F;
+}
+
+.text-shadow-hero {
+  text-shadow: 4px 4px 0px #171719, 8px 8px 0px #007F86;
+}
+
+.text-shadow-vermilion {
+  text-shadow: 3px 3px 0px #171719, 6px 6px 0px #FF300F;
+}
+
+.text-shadow-teal {
+  text-shadow: 3px 3px 0px #171719, 5px 5px 0px #007F86;
+}
+
+.text-shadow-cream {
+  text-shadow: 2px 2px 0px #FFF0C7, 4px 4px 0px #171719;
+}
+
+.text-shadow-ink-sm {
+  text-shadow: 2px 2px 0px #171719;
+}
+
+.text-shadow-ink-md {
+  text-shadow: 3px 3px 0px #171719;
+}
+
+/* Hard Box Shadows for Vintage Print Layers */
+.shadow-retro-sm {
+  box-shadow: 3px 3px 0px #171719;
+}
+
+.shadow-retro {
+  box-shadow: 5px 5px 0px #171719;
+}
+
+.shadow-retro-md {
+  box-shadow: 7px 7px 0px #171719;
+}
+
+.shadow-retro-lg {
+  box-shadow: 10px 10px 0px #171719;
+}
+
+.shadow-retro-xl {
+  box-shadow: 14px 14px 0px #171719;
+}
+
+.shadow-retro-teal {
+  box-shadow: 6px 6px 0px #007F86;
+}
+
+.shadow-retro-vermilion {
+  box-shadow: 6px 6px 0px #FF300F;
+}
+
+.shadow-retro-cream {
+  box-shadow: 5px 5px 0px #FFF0C7;
+}
+
+/* Tactile physical press state for buttons and interactive cards */
+.btn-tactile {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.btn-tactile:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px #171719;
+}
+
+.btn-tactile:active {
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 0px #171719;
+}
+
+/* Subtle Film Grain / Printed Paper Overlay */
+.vintage-paper-bg {
+  background-color: #FFF0C7;
+  background-image: radial-gradient(#171719 0.45px, transparent 0.45px), radial-gradient(#007F86 0.35px, transparent 0.35px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+.halftone-dots {
+  background-image: radial-gradient(#171719 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+
+.halftone-dots-teal {
+  background-image: radial-gradient(#007F86 1.2px, transparent 1.2px);
+  background-size: 10px 10px;
+}
+
+.halftone-dots-orange {
+  background-image: radial-gradient(#FF741F 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+}
+
+/* Film Sprocket Perforation Pattern */
+.film-sprocket-border {
+  background-image: linear-gradient(to right, #171719 14px, transparent 14px);
+  background-size: 26px 14px;
+  background-repeat: repeat-x;
+}
+
+/* Custom Scrollbar for Retro Cinema Vibe */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF0C7;
+  border-left: 2px solid #171719;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF300F;
+  border: 2px solid #171719;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF741F;
+}
